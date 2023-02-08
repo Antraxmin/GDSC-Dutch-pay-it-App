@@ -2,7 +2,6 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:dutch_pay_it/Screens/calculate.dart';
 import 'package:dutch_pay_it/Screens/addName.dart';
-
 import 'dart:async';
 import 'dart:convert';
 import 'package:http/http.dart' as http;
@@ -248,7 +247,6 @@ class buttonBox extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      //decoration: BoxDecoration(border: Border.all(color: Colors.blue)),
       width: double.infinity,
       height: 50,
       child: ButtonBar(

@@ -4,7 +4,6 @@ import 'package:dutch_pay_it/Screens/home.dart';
 
 class Calculate extends StatelessWidget {
   Calculate({Key? key}) : super(key: key);
-  var nameLabel = ['지영', '현수', '윤섭', '재원'];
   var count = 0;
   var menuItem = [
     {
@@ -62,14 +61,13 @@ class Calculate extends StatelessWidget {
           centerTitle: true,
         ),
         body: Center(
-          //padding: const EdgeInsets.all(8.0),
           child: Column(
             children:  [
               Flexible(
                 flex: 8,
                 child: Card(
                   margin: const EdgeInsets.all(30),
-                  child: listBox(count:count, nameLabel:nameLabel, menuItem:menuItem),
+                  child: listBox(count:count, menuItem:menuItem),
                 ),
               ),
               Flexible(
@@ -84,9 +82,8 @@ class Calculate extends StatelessWidget {
 }
 
 class listBox extends StatelessWidget {
-  listBox({Key? key, this.menuItem, this.count, this.nameLabel}) : super(key: key);
+  listBox({Key? key, this.menuItem, this.count}) : super(key: key);
   var count;
-  var nameLabel;
   var menuItem;
   var sum = 0;
 
